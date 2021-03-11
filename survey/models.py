@@ -189,7 +189,7 @@ class Message(TimeStampedModel):
         return ''
 
     def save(self, **kwargs):
-        if not self.issue_number:
+        if not self.msg_number:
             objects = list(Message.objects.all().order_by('created').values_list('id', flat=True))
             sequence = '{0:03d}'.format(objects.index(self.id) + 1 if self.id in objects else len(objects) + 1)
             self.msg_number = '{}-{}'.format(
