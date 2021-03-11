@@ -1,0 +1,31 @@
+
+ul.ui-widget-content.ui-autocomplete {
+    top: -815px !important;
+    left: 260px !important;
+    width: 315px !important;
+    z-index: 9999 !important;
+    overflow: scroll !important;
+    height: 300px !important;
+}
+
+.table-responsive td {
+    position: relative;
+}
+
+.table-responsive td .badge {
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    display: block;
+}
+
+.staff-profile .badge {
+    display: block;
+    float: right;
+    margin-left: 10px;
+}
+
+.app-page-title {
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
+}
