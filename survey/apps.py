@@ -16,11 +16,16 @@ class SuitConfig(DjangoSuitConfig):
         # ParentItem('Dashboard', url='/Dashboard', icon='fa fa-list'),
         ParentItem('Message Bank', children=[
             ChildItem('Messages', model='survey.message'),
+            ChildItem('Topics', model='survey.topic'),
             ChildItem('Audiences', model='survey.audience'),
+            ChildItem('Language', model='survey.language'),
             ChildItem('Sectors', model='survey.sector'),
-            ChildItem('Sources', model='survey.source'),
             ChildItem('Outputs', model='survey.output'),
             ChildItem('Types', model='survey.type'),
+            ChildItem('Channel', model='survey.channel'),
+
+
+            ChildItem('Sources', model='survey.source'),
         ], icon='fa fa-list'),
         ParentItem('Users', children=[
             ChildItem('Users', model='auth.user'),

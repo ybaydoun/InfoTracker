@@ -32,6 +32,7 @@ urlpatterns = [
     # url(r'^List', KnowledgeTrackerList.as_view(), name='list_kmtracker'),
     # url(r'^Dashboard/Researches/$', ResearchesView.as_view(), name='dashboard_researches'),
     url(r'^', admin.site.urls),
+    #                  url(settings.ADMIN_URL, admin.site.urls),
     # url(r'^survey/', include('survey.urls', namespace='survey')),
     url('i18n/', include('django.conf.urls.i18n')),
     url('tinymce/', include('tinymce.urls')),
